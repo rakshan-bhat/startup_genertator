@@ -9,8 +9,7 @@
         <h1>Your Startup Idea 💡</h1>
         
         <div class="idea-container">
-            <!-- Display formatted idea with proper line breaks -->
-            {{ idea|safe }}
+            {{ idea.replace('**', '').replace('__', '').replace('~~', '')|safe }}
         </div>
 
         <div class="action-buttons">
