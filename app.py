@@ -11,7 +11,7 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 def generate_idea(prompt):
     llm = ChatGroq(
         temperature=0.7,
-        model_name="qwen2-72b-instruct",
+        model_name="llama-3.3-70b-versatile",
         api_key=groq_api_key
     )
     
@@ -36,4 +36,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
