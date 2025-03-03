@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Idea - Startup Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Startup Idea 💡</h1>
+        
+        <div class="idea-container">
+            <!-- Display formatted idea with proper line breaks -->
+            {{ idea|safe }}
+        </div>
+
+        <div class="action-buttons">
+            <a href="/" class="btn">Generate Another Idea</a>
+        </div>
+    </div>
+</body>
+</html>

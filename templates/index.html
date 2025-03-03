@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup Idea Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Startup Idea Generator</h1>
+        <form method="POST">
+            <input type="text" name="prompt" placeholder="Enter your industry/domain" required>
+            <button type="submit">Generate Idea</button>
+        </form>
+    </div>
+</body>
+</html>
