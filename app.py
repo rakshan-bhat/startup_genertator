@@ -12,7 +12,7 @@ def generate_idea(prompt):
     try:
         llm = ChatGroq(
             temperature=0.7,
-            model_name="qwen2-72b-instruct",
+            model_name="llama-3.3-70b-versatile",
             api_key=groq_api_key
         )
         
